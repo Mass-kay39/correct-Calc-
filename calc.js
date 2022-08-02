@@ -1,4 +1,4 @@
-let output = document.querySelector('.output')
+/*let output = document.querySelector('.output')
 let controlbtn = document.querySelector('.controls').children
 allsymbol = ['^2', 'c', '%', '+', '-', 'x', '.', '➗', '=', '#', 'Del']
 
@@ -14,6 +14,7 @@ if(symbol === '-') result = firstname - secondname
 if(symbol === '➗') result = firstname / secondname
 if(!secondname && symbol === '%') result = firstname / 100
 if(symbol === 'x') result = firstname * secondname
+
 
 output .innerText = result
 firstname = result
@@ -38,7 +39,10 @@ if(btnValue === 'c'){
     symbol = ''
     return output.innerText = ''
 }
-if(firstname && allsymbolv){
+if(btnValue === 'Del'){
+
+}
+if(firstname && allsymbolv){  
     secondname && calculate()
 symbol = btnValue
 }
@@ -48,10 +52,15 @@ else if(!symbol)
 else if(symbol)
     secondname += btnValue
 
-if(btnValue !== '=')   output.innerText += btnValue
-    })
-
+if(btnValue !== '=')   output.innerText += btnValue  })
 }
+
+let money = document.querySelector('.money')
+
+money.addEventListener('click', function(){
+ output.innerText = output.innerText.slice(0, -1)
+    
+})
 let img = document.getElementById('img')
 imgArray = ['bi.jpg', 'bi2.jpg', '94.jpg', '95.jpg', '478.jpg', 'one.jpg']
 biola = 0
@@ -62,4 +71,22 @@ function slideShow(){
         biola = 0
     }
 }
-setInterval(slideShow, 1500)
+setInterval(slideShow, 1500)*/
+let output = document.getElementById('result')
+function kenny(number){
+    output.value += number
+}
+function calculate(){
+    try{
+        output.value=eval(output.value)
+    }
+    catch(err){return null
+
+    }
+}
+ function clr(){
+    output.value= ''
+ }
+ function del(){
+    output.value = output.value.slice(0, -1)
+ }

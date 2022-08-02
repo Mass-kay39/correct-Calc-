@@ -2,15 +2,15 @@
     margin: 0; padding: 0;
 }
 body{
-    background: linear-gradient(to right, cyan, gray, blue);
+    background: #ecf0f3
 }
 .calculator{
-    background: green; width: 25em; margin: 5em auto; margin-top: 0px; border-radius: 15px;
+    background:gray; width: 25em; margin: 5em auto; margin-top: 0px; border-radius: 15px;
 }
 .output{
     background: linear-gradient(to right, black , black);
     color: white;
-    height: 5em; line-height: 8em; font-size: 1.7em; padding: 0 1.5em; text-align: right;
+    height: 3em; line-height: 8em; font-size: 1.7em; padding: 0 1.5em; text-align: end; border-radius: 10px; text-align: right;
 }
 .controls{
     display: grid;grid-template-columns: repeat(4, 1fr); padding: 0.5em; margin: auto 0.5em;
@@ -35,10 +35,10 @@ img{
 }
 @media only screen and (max-width: 600px) {
     .calculator{
-        height: 65vh; width: 15em; margin: 2em auto; margin-top: 150px;
+        height: 60vh; width: 15em; margin: 2em auto; margin-top: 150px; margin-top: 30px;
     }
     .output{
-        height: 3em; background: white; color:black; line-height: 5em; border-radius: 5px;
+        height: 2em; background: white; color:black; line-height: em; border-radius: 5px; width: 150px; text-align: end;
     }
     .controls{
         padding: 0.3em;
