@@ -90,3 +90,9 @@ function calculate(){
  function del(){
     output.value = output.value.slice(0, -1)
  }
+ function Mathpow(){
+    output.value = Math.pow(output.value, 2)
+ }
+ function sqrt(){
+    output.value = Math.sqrt(output.value)
+ }

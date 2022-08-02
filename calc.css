@@ -27,11 +27,14 @@ body{
 .controls .red{
     background: cyan; color: red;
 }
-.slide{
-    height: 50px;width: 10em;
+
+
+
+.equal{
+    background: blue; color:white; height: 5.5em; cursor: pointer; margin: 0.5em; border: unset; border-radius: 5px; outline: unset; font-size: 15px; width: 200px;
 }
-img{
-    height: 50ox; width:25em; margin: 3em auto; margin-left: 50px;
+.slide{
+    justify-content: center; color:white; height: 45px; padding: 5px; font-size: 22px; text-align: center; border: none; background:purple;
 }
 @media only screen and (max-width: 600px) {
     .calculator{
